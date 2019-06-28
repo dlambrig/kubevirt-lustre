@@ -26,9 +26,9 @@ spec:
         memory: 1024M
   terminationGracePeriodSeconds: 0
   volumes:
-  - name: mydisk
+  - name: vol-mds
     persistentVolumeClaim:
-      claimName: mydisk
+      claimName: vol-mds
   - containerDisk:
       image: dlambrig/centos7-lustre:latest
     name: containerdisk

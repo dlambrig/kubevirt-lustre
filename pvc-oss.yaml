@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: disk-mdt
+  name: vol-oss
 spec:
   accessModes:
     - ReadWriteMany
   storageClassName: manual
   resources:
     requests:
-      storage: 5Gi
+      storage: 20Gi
 
